@@ -22,6 +22,8 @@ body{
     width: 30rem;
     height: 30rem;
     margin-bottom: 2rem;
+    border-radius: 10px;
+    filter: drop-shadow(1px 7px 15px #000000);
 }
 .title{
     font-size: 3.6rem;
