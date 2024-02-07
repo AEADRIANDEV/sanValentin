@@ -51,4 +51,18 @@ body{
 }
 .hidden {
     display: none;
-  }
+}
+.boton-carta{
+    bottom: 40px;
+    right: 0px;
+    position: fixed;
+    padding: 13px 20px;
+    border-radius: 5px ;
+    border:none;
+    color: #d5294d;
+    font-size: 23px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+    background-color: #fbd0d5
+}

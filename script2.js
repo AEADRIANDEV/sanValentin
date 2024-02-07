@@ -1,10 +1,12 @@
-//"use strict";
+"use strict";
 
 const titleElement = document.querySelector(".title");
 const buttonsContainer = document.querySelector(".buttons");
 const yesButton = document.querySelector(".btn--yes");
 const noButton = document.querySelector(".btn--no");
 const catImg = document.querySelector(".cat-img");
+
+
 
 const MAX_IMAGES=10;
 
@@ -31,7 +33,21 @@ function handleYesClick() {
     titleElement.innerHTML = "¡¡Siiuuuu!! :3";
     buttonsContainer.classList.add("hidden");
     changeImage("yes");
+    crearboton();
 }
+ 
+function crearboton(){
+    var container = document.getElementById("container");
+    var boton = document.createElement("button");
+    boton.classList.add("boton-carta")
+    boton.innerHTML = "Click aqui Mamo";
+    container.appendChild(boton);
+    boton.addEventListener("click", ()=>{
+      var limpieza='carta.html';
+      window.location.href=limpieza;
+    })
+}
+
 
 function resizeYesButton() {
     const computedStyle = window.getComputedStyle(yesButton);
@@ -61,7 +77,7 @@ function generateMessage(noCount) {
 }
 
 function changeImage(image) {
-    catImg.src = `img2/cat-${image}.jpg`;
+    catImg.src = `img2/cat--${image}.jpg`;
 }
 
 function updateNoButtonText() {
