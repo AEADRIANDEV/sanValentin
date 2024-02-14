@@ -23,7 +23,18 @@ body{
     text-align: center;
     display: flex;
     flex-direction: column;
-
+}
+.contenedor{
+    position: relative;
+    margin: 0;
+}
+.atentamente{
+    position: relative;
+    overflow:auto;
+    left: 760px;
+    font-size: 25px ;
+    font-family: "Caveat";
+    
 }
 .margen-carta{
     margin: 200px 500px 400px 400px;
@@ -45,19 +56,13 @@ body{
 
 .carta h2{
     position: relative;
-    left: 20%;
+    left: 28%;
     top: 15px;
     font-size: 40px ;
     font-family: "Caveat";
 }
 
-.atentamente{
-    position: relative;
-    left: 58%;
-    top: 15px;
-    font-size: 25px ;
-    font-family: "Caveat";
-}
+
 
 .carta p{
     font-size: 35px ;
@@ -65,36 +70,4 @@ body{
     text-align: justify;
 }
 
-.heart-shape{
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    top: 1800px;
-    left: 1250px;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-    background-color: rgb(222, 60, 60);
-}
-.heart-shape:before,
-.heart-shape:after{
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    content: '';
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-    background-color: rgb(222, 60, 60);
-}
-.heart-shape:before{
-    bottom: 0px;
-    left: -50px;
-}
-.heart-shape:after{
-    top: -50px;
-    right: 0px;
-}
+
