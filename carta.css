@@ -29,9 +29,9 @@ body{
     margin: 0;
 }
 .atentamente{
-    position: relative;
+    
     overflow:auto;
-    left: 760px;
+ 
     font-size: 25px ;
     font-family: "Caveat";
     
@@ -70,4 +70,20 @@ body{
     text-align: justify;
 }
 
+@media screen and (max-width: 1920px){
+    .margen-carta{
+        margin: 100px 100px 100px 100px;
+    }
+}
 
+@media screen and (max-width: 1024px){
+    .margen-carta{
+        margin: 150px 150px 150px 150px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .margen-carta{
+        margin: 2px;
+    }
+}
